@@ -17,3 +17,19 @@ WHERE id = 3;
 DELETE FROM `student enrollment database` WHERE id = 2;
 
 DELETE FROM `student enrollment database` WHERE status = 'Inactive';
+
+SELECT * FROM `student enrollment database` WHERE fees_paid > 5000;
+
+UPDATE `student enrollment database` SET status='Active'
+WHERE course = 'Web Development';
+
+UPDATE `student enrollment database` SET  fees_paid = fees_paid + 1000
+WHERE course = 'Data Science';
+
+UPDATE `student enrollment database` SET status = 'Inactive',
+    fees_paid = fees_paid - 500
+WHERE id = 3;
+
+DELETE FROM `student enrollment database` WHERE id = 2;
+
+DELETE FROM `student enrollment database` WHERE status = 'Inactive';
